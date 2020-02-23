@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body { /* Background style from https://leaverou.github.io/css3patterns/#carbon*/
+    margin: 0;
+    font-family: Arial;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+
+h1 {
+    margin-top: 70px;
+    font-family: 'Russo One';
+    color: white;
+}
+
+.header {
+    text-align: center;
+    filter: brightness(85%);
+    font-family: 'Russo One';
+    -webkit-filter: drop-shadow(1px 2px 1px black);
+    filter: brightness(85%) drop-shadow(1px 2px 1px black);
+}
+
+p {
+    color: white;
+    font-size: 120%;
+}
+
+.row {
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column img {
+    cursor: pointer;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 10%;
+    -webkit-filter: brightness(85%) drop-shadow(1px 2px 1px black);
+    filter: brightness(85%) drop-shadow(1px 2px 1px black);   
+}
+.column img:hover {
+    -webkit-filter: brightness(100%) drop-shadow(1px 2px 1px black);
+    filter: brightness(100%) drop-shadow(1px 2px 1px black);   
+}
+
+.button {
+    background-color: #00b33c;
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Russo One';
+    -webkit-filter: brightness(85%) drop-shadow(1px 2px 1px black);
+    filter: brightness(85%) drop-shadow(1px 2px 1px black);
+}
+
+.button:hover {
+    -webkit-filter: brightness(100%) drop-shadow(1px 2px 1px black);
+    filter: brightness(100%) drop-shadow(1px 2px 1px black);
+}
+
+@media screen and (max-width: 1200px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width:100%;
+    }
+    .column img {
+        width: 13%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .column img {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .column img {
+        width: 19%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 110%;
+    }
+    .column img {
+        width: 22%;
+    }
+    
+}
