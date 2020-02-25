@@ -128,7 +128,7 @@ function cardClick(clicked_id){
                 streaks = 0;
                 faceDownCard();
                 resetImgsAndIDsList();
-                document.getElementById("points").innerHTML = "Points: " + points + "/10";
+                document.getElementById("points").innerHTML = "Points: " + points + "/21";
             }
         }, 800)
     }
