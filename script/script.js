@@ -1,4 +1,4 @@
-var cards = ["cards/koala.png", "cards/dog.png", "cards/monkey.png", "cards/panda.png", "cards/koala.png", "cards/dog.png", "cards/monkey.png", "cards/panda.png"];
+var cards = ["cards/koala.png", "cards/dog.png", "cards/monkey.png", "cards/panda.png", "cards/hamster.png", "cards/rabbit.png", "cards/koala.png", "cards/dog.png", "cards/monkey.png", "cards/panda.png", "cards/hamster.png", "cards/rabbit.png",];
 shuffleCards(cards);
 
 // Dictionary that assign each img id a card
@@ -10,7 +10,11 @@ var cardDictionary = {
     "5" : cards[4],
     "6" : cards[5],
     "7" : cards[6],
-    "8" : cards[7]
+    "8" : cards[7],
+    "9" : cards[8],
+    "10" : cards[9],
+    "11" : cards[10],
+    "12" : cards[11]
 }
 
 // Shuffles the cards
@@ -107,8 +111,8 @@ function cardClick(clicked_id){
                 ++counter;
                 points += 1 + streaks;
                 ++streaks;
-                document.getElementById("points").innerHTML = "Points: " + points + "/10";
-                if (counter === 4){
+                document.getElementById("points").innerHTML = "Points: " + points + "/21";
+                if (counter === 6){
                     clearInterval(timeCounter);
                     document.getElementById("timeCount").innerHTML = "Time: " + currentTime;
                     document.getElementById("score").innerHTML = "Score: " + calculateScore();
