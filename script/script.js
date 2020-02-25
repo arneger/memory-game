@@ -86,7 +86,6 @@ function calculateScore() {
     return score;
 }
 
-var streaks = 0;
 var timesClicked = 0;
 var points = 0;
 var counter = 0;
@@ -109,9 +108,8 @@ function cardClick(clicked_id){
                 removeCards();
                 resetImgsAndIDsList();
                 ++counter;
-                points += 1 + streaks;
-                ++streaks;
-                document.getElementById("points").innerHTML = "Points: " + points + "/21";
+                points += 1;
+                document.getElementById("points").innerHTML = "Points: " + points + "/6";
                 if (counter === 6){
                     clearInterval(timeCounter);
                     document.getElementById("timeCount").innerHTML = "Time: " + currentTime;
@@ -125,10 +123,9 @@ function cardClick(clicked_id){
                 else{
                     points -= 1
                 }
-                streaks = 0;
                 faceDownCard();
                 resetImgsAndIDsList();
-                document.getElementById("points").innerHTML = "Points: " + points + "/21";
+                document.getElementById("points").innerHTML = "Points: " + points + "/6";
             }
         }, 800)
     }
