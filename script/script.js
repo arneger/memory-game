@@ -23,7 +23,7 @@ function shuffleCards(cards) {
 }
 
 // Freeze the possibility of clicking on element
-function handler(e){ //makes it so you cant change elements or change elements
+function handler(e){ 
     e.stopPropagation();
     e.preventDefault();
 }
