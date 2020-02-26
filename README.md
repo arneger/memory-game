@@ -1,6 +1,4 @@
 # memory-game
-Memory Game
-
 This is a website where you can play a concentration memory card game.
 
 ### How to play
